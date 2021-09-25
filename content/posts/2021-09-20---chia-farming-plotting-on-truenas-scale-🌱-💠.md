@@ -6,7 +6,7 @@ title: Chia Farming & Plotting on TrueNAS SCALE  🌱 + 💠
 slug: chia-farming-and-plotting-on-truenas-scale
 socialImage: /media/Screenshot_20210910_144649-1024x507.png
 date: 2021-09-20
-description: Chia Farming & Plotting on TrueNAS SCALE
+description: A how to guide on using TrueNAS SCALE for Chia farming and plotting.
 category: chia, chia-plotting, chia-blockchain, crypto, farming, plotting
 tags:
   - chia
@@ -30,9 +30,7 @@ Also i will add some links where you can find more plugins for TruNAS.
 
 ## TrueNAS Dashboard:
 
-![TrueNAS SCALE BETA 1 21.08 Dashboard](media/Screenshot_20210910_144649-1024x507.png)
-
-TrueNAS SCALE BETA 1 21.08 Dashboard
+![TrueNAS SCALE BETA 1 21.08 Dashboard](media/Screenshot_20210910_144649-1024x507.png "TrueNAS SCALE BETA 1 21.08 Dashboard")
 
 This will be your main TrueNAS Dashboard view above. You can see i have `POOL0` and `HDD0`. Adding the drives is pretty self explanatory but we are going to jump straight into adding our plotting drive and our HDD to store the plots created.
 
@@ -40,17 +38,13 @@ This will be your main TrueNAS Dashboard view above. You can see i have `POOL0` 
 
 In the Pool Manager you should see any drives that you have attached to TrueNAS. Simply click suggest layout for TrueNAS to create a suggested layout if you have more than one drive. In this case i will be adding just one 4TB HDD
 
-![Creating a pool in TrueNAS](media/adding_hdd0_truenas-1024x567.png)
-
-Creating a pool in TrueNAS
+![Creating a pool in TrueNAS](media/adding_hdd0_truenas-1024x567.png "Creating a pool in TrueNAS")
 
 At this point you should have two pools, your main pool that was setup when you created the virtual machine or installed TrueNAS, and another pool or more that will be your storage for your pools. As you can see below we have one pool which will be our plotter and we will give it 300GB partitioned on a 1TB SSD that we passed through via Proxmox.
 
-![TrueNAS Storage pools](media/truenas_storage-1024x530.png "Apps GUI")
+![TrueNAS Storage pools](media/truenas_storage-1024x530.png "TrueNAS Storage pools")
 
-TrueNAS Storage pools
-
-## Choosing Pool For Apps:
+**Choosing Pool For Apps:**
 
 At this point we are pretty much ready to set up our applications but first we need to add an application dataset to our SSD pool. We do this by going to the `App`s tab and the notification to add a pool for your apps will pop up. You can choose any pool you like for storing your apps but i would recommend using your SSD not your HDD for your apps.
 
@@ -70,27 +64,19 @@ Select the type of apps you want to see in the "Trains". Different choices will 
 
 ![Adding a Catalog in TrueNAS](media/adding_catalog-1024x538.png "Adding a Catalog in TrueNAS")
 
-Adding a Catalog in TrueNAS
-
 Once you have added the charts the `Manage Catalogs` tab will look like the image below.
 
-![Manage Catalogues TrueNAS](media/manage_catalogue_truenas-1024x538.png)
-
-Manage Catalogues TrueNAS
+![Manage Catalogues TrueNAS](media/manage_catalogue_truenas-1024x538.png "Manage Catalogues TrueNAS")
 
 Now we are ready to install Chia on our TrueNAS SCALE system. Go back to `Apps` and deselect the Truecharts apps for now by clicking `Available Applications -> Catalogs` and deselect it for now so we only see the official apps.
 
-![TrueNAS disable truecharts](media/disable_truecharts-1024x538.png)
-
-TrueNAS disable truecharts
+![TrueNAS disable truecharts](media/disable_truecharts-1024x538.png "TrueNAS disable truecharts")
 
 ## Installing Chia or Mechanaris
 
 Both apps have the ability to host a full node and plot. The TrueNAS devs have done a great job though packaging all the major apps needed like MadMax Plotter, the main Chia application into one bundle which works great and is constantly updated.
 
-![Choosing folders for Chia installation](media/chia_install_folders-1024x726.png)
-
-Choosing folders for Chia installation
+![Choosing folders for Chia installation](media/chia_install_folders-1024x726.png "Choosing folders for Chia installation")
 
 The image above shows the storage configuration for the Chia app. You are just basically telling TrueNAS that you want to use your `POOL0` or SSD for the Chia app configuration and `HDD0` for your plots storage. All the needed folders will be created automatically. Click next on the next few boxes and submit the installation.
 
@@ -98,21 +84,15 @@ As soon as the app starts the full node will automatically start syncing.
 
 At this point we can jump into the application shell by clicking the 3 dots on the chia app and selecting shell
 
-![Open Shell Chia App TrueNAS SCALE](media/chia-app_edit-1024x543.png)
-
-Open Shell Chia App TrueNAS SCALE
+![Open Shell Chia App TrueNAS SCALE](media/chia-app_edit-1024x543.png "Open Shell Chia App TrueNAS SCALE")
 
 A new window will open asking you to confirm
 
-![](media/start_shell-1024x628.png)
-
-Start Chia Shell
+![open shell](media/start_shell-1024x628.png "open shell")
 
 Leave everything set to default and click `choose` to jump into the container. Below is the shell where you can submit your commands to do things like start or stop your container, or even plotting can be done in this window using madmax.
 
-![](media/open_app_shell-1024x543.png)
-
-Chia App Shell
+![shell interface](media/open_app_shell-1024x543.png "shell interface")
 
 Some commands to use in the shell
 
