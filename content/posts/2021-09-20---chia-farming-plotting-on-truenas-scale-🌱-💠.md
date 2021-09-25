@@ -16,7 +16,6 @@ tags:
   - farming
   - plotting
 ---
-
 ## Introduction:
 
 After setting up Proxmox 7 to farm my Chia plots and mine Ethereum at the same time with each miner in their own virtual machine, i thought it would be good to try out TrueNAS SCALE as a main server for my SAMBA shares and since there is an official app made by the TrueNAS team for Chia im going to give it a go. Maybe install the Machinaris plugin also.
@@ -25,9 +24,9 @@ Also i will add some links where you can find more plugins for TruNAS.
 
 ## Requirements:
 
-- TrueNAS SCALE Beta 1 - 21.08 installed and running. (For Proxmox use HOST CPU)
-- A pool (SSD) for plotting (if this makes no sense don't worry).
-- A pool for storing plots preferably large HDD.
+* TrueNAS SCALE Beta 1 - 21.08 installed and running. (For Proxmox use HOST CPU)
+* A pool (SSD) for plotting (if this makes no sense don't worry).
+* A pool for storing plots preferably large HDD.
 
 ## TrueNAS Dashboard:
 
@@ -47,7 +46,7 @@ Creating a pool in TrueNAS
 
 At this point you should have two pools, your main pool that was setup when you created the virtual machine or installed TrueNAS, and another pool or more that will be your storage for your pools. As you can see below we have one pool which will be our plotter and we will give it 300GB partitioned on a 1TB SSD that we passed through via Proxmox.
 
-![TrueNAS Storage pools](media/truenas_storage-1024x530.png)
+![TrueNAS Storage pools](media/truenas_storage-1024x530.png "Apps GUI")
 
 TrueNAS Storage pools
 
@@ -55,9 +54,7 @@ TrueNAS Storage pools
 
 At this point we are pretty much ready to set up our applications but first we need to add an application dataset to our SSD pool. We do this by going to the `App`s tab and the notification to add a pool for your apps will pop up. You can choose any pool you like for storing your apps but i would recommend using your SSD not your HDD for your apps.
 
-![Choosing a pool for Apps in TrueNAS](media/choose_pool_apps.png)
-
-Choosing a pool for Apps in TrueNAS
+![Choosing a pool for Apps in TrueNAS](/media/choose_pool_apps.png "Choosing a pool for Apps in TrueNAS")
 
 You can also go to `Apps -> Settings -> Add pool` if the notification didn't pop up.
 
@@ -67,11 +64,11 @@ Before we install any apps here is how to get all the extra apps you see in the 
 
 Simply go to `Apps -> Manage Catalogue -> Add Catalogue`
 
-We need to add the following catalog: [https://github.com/truecharts/catalog](https://github.com/truecharts/catalog)
+We need to add the following catalog: <https://github.com/truecharts/catalog>
 
 Select the type of apps you want to see in the "Trains". Different choices will give you apps in different stages of development.
 
-![Adding a Catalog in TrueNAS](media/adding_catalog-1024x538.png)
+![Adding a Catalog in TrueNAS](media/adding_catalog-1024x538.png "Adding a Catalog in TrueNAS")
 
 Adding a Catalog in TrueNAS
 
@@ -135,11 +132,11 @@ There are a lot of commands you can see here on a [previous guide at the bottom 
 
 The official apps included and the corresponding commands are:
 
-- `chia` - The main Chia program
-- `chia_plot` - The MadMax Plotter
-- `bladebit` - The BladeBit RAM Plotter
-- `plotman` - The tool for enabling plotman monitoring / plotting
-- /farmr - Location for the farmr chia monitoring bot/service.
+* `chia` - The main Chia program
+* `chia_plot` - The MadMax Plotter
+* `bladebit` - The BladeBit RAM Plotter
+* `plotman` - The tool for enabling plotman monitoring / plotting
+* /farmr - Location for the farmr chia monitoring bot/service.
 
 Please see the [official TrueNAS website for information](https://truepool.io/kb/truepool-docker-image) on the Chia Docker Image.
 
