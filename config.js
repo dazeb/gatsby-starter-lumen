@@ -26,7 +26,7 @@ module.exports = {
   ],
   author: {
     name: 'Darren Bennett',
-    photo: '/photo.jpg',
+    photo: '/me-250.jpg',
     bio: 'Currently learning React, Vue & Django',
     contacts: {
       email: '',
