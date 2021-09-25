@@ -1,11 +1,12 @@
 ---
+draft: true
+coverImage: Screenshot_20210910_144649.png
 title: Chia Farming & Plotting on TrueNAS SCALE  🌱 + 💠
+slug: Chia-Farming-&-Plotting-on-TrueNAS-SCALE
+socialImage: /media/Screenshot_20210910_144649-1024x507.png
 date: 2021-09-20
-categories:
-  - chia
-  - crypto
-  - linux
-  - truenas
+description: Chia Farming & Plotting on TrueNAS SCALE
+category: chia, chia-plotting, chia-blockchain, crypto, farming, plotting
 tags:
   - chia
   - chia-plotting
@@ -13,7 +14,11 @@ tags:
   - crypto
   - farming
   - plotting
-coverImage: Screenshot_20210910_144649.png
+categories:
+  - chia
+  - crypto
+  - linux
+  - truenas
 ---
 
 ## Introduction:
