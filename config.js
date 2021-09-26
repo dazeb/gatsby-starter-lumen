@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
+  url: 'https://blog.dazeb.uk',
   pathPrefix: '/',
   title: 'Blog by Darren Bennett',
   subtitle: 'Currently learning React, Vue & Django',
@@ -26,14 +26,14 @@ module.exports = {
   ],
   author: {
     name: 'Darren Bennett',
-    photo: '/me-250.jpg',
-    bio: 'Currently learning React, Vue & Django',
+    photo: '/me-250.png',
+    bio: 'A blog about Linux, Crypto & Virtualization',
     contacts: {
-      email: '',
+      email: 'daz@dazeb.uk',
       facebook: '#',
       telegram: '#',
       twitter: '#',
-      github: '#',
+      github: 'DazEB2',
       rss: '',
       vkontakte: '',
       linkedin: '#',
@@ -41,8 +41,8 @@ module.exports = {
       line: '',
       gitlab: '',
       weibo: '',
-      codepen: '',
-      youtube: '',
+      codepen: 'DazEB2',
+      youtube: 'DazEB',
       soundcloud: '',
       medium: '',
     }
