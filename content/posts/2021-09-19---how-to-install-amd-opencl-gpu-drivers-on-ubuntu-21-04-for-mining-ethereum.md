@@ -116,7 +116,7 @@ sudo update-grub
 
 Reboot
 
-```bash
+```cwl
 sudo reboot
 ```
 
