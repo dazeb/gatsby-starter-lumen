@@ -21,7 +21,7 @@ description: "A how to guide on using TrueNAS SCALE for Chia farming and plottin
 
 After setting up Proxmox 7 to farm my Chia plots and mine Ethereum at the same time with each miner in their own virtual machine, i thought it would be good to try out TrueNAS SCALE as a main server for my SAMBA shares and since there is an official app made by the TrueNAS team for Chia im going to give it a go. Maybe install the Machinaris plugin also.
 
-Also i will add some links where you can find more plugins for TruNAS.
+Also i will add some links where you can find more plugins for TrueNAS.
 
 ## Requirements:
 
