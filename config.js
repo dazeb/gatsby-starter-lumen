@@ -8,7 +8,7 @@ module.exports = {
   copyright: 'blog.dazeb.uk © All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  googleAnalyticsId: 'UA-208608020-1',
   useKatex: false,
   menu: [
     {
