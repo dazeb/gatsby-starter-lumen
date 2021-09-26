@@ -1,21 +1,22 @@
 ---
+title: "Chia Farming & Plotting on TrueNAS SCALE  🌱 + 💠"
+date: "2021-09-20"
+template: "post"
 draft: false
-coverImage: Screenshot_20210910_144649.png
-template: post
-title: Chia Farming & Plotting on TrueNAS SCALE  🌱 + 💠
-slug: chia-farming-and-plotting-on-truenas-scale
-socialImage: /media/Screenshot_20210910_144649-1024x507.png
-date: 2021-09-20
-description: A how to guide on using TrueNAS SCALE for Chia farming and plotting.
-category: chia, chia-plotting, chia-blockchain, crypto, farming, plotting
+slug: "chia-farming-and-plotting-on-truenas-scale"
+coverImage: "/media/Screenshot_20210910_144649.png"
+category: ["chia", "chia-plotting", "chia-blockchain", "crypto", "farming", "plotting"]
 tags:
-  - chia
-  - chia-plotting
-  - chia-blockchain
-  - crypto
-  - farming
-  - plotting
+  - "chia"
+  - "chia-plotting"
+  - "chia-blockchain"
+  - "crypto"
+  - "farming"
+  - "plotting"
+socialImage: "/media/Screenshot_20210910_144649-1024x507.png"
+description: "A how to guide on using TrueNAS SCALE for Chia farming and plotting."
 ---
+
 ## Introduction:
 
 After setting up Proxmox 7 to farm my Chia plots and mine Ethereum at the same time with each miner in their own virtual machine, i thought it would be good to try out TrueNAS SCALE as a main server for my SAMBA shares and since there is an official app made by the TrueNAS team for Chia im going to give it a go. Maybe install the Machinaris plugin also.
