@@ -1,32 +1,34 @@
 ---
-title: "How to Install AMD OpenCL GPU Drivers on Ubuntu 21.04 for Miners"
-date: "2021-09-19"
-template: "post"
-slug: "How-to-Install-AMD-OpenCL-GPU-Drivers-on-Ubuntu-21.04-for-Miners"
 draft: false
-categories: 
-  - "crypto"
-  - "drivers"
-  - "ethereum"
-  - "linux"
-  - "ubuntu"
-tags: 
-  - "amd-drivers"
-  - "crypto"
-  - "ethereum"
-  - "farming"
-  - "mining"
-  - "overclocking-gpu-on-linux"
-  - "ubuntu-21-04"
-  - "wattman-on-linux"
-coverImage: "media/mining-new.png"
+coverImage: media/mining-new.png
+template: post
+title: How to Install AMD OpenCL GPU Drivers on Ubuntu 21.04 for Miners
+slug: How-to-Install-AMD-OpenCL-GPU-Drivers-on-Ubuntu-21.04-for-Miners
+socialImage: /media/mining-new.png
+date: 2021-09-19
+description: One of lifes greatest mysteries, how to install AMD graphics drivers on Linux.
+category: Mining
+tags:
+  - amd-drivers
+  - crypto
+  - ethereum
+  - farming
+  - mining
+  - overclocking-gpu-on-linux
+  - ubuntu-21-04
+  - wattman-on-linux
+categories:
+  - crypto
+  - drivers
+  - ethereum
+  - linux
+  - ubuntu
 ---
-
 Installing drivers on Linux can be an absolute disaster waiting to happen. You install the drivers and you get either a black screen or the system will simply refuse to boot. I have tried absolutely every way to install them and i almost always have problems. (bare with me and i promise in the end you will have a solution and an understanding why so you will never have problems with AMD drivers on Linux again)
 
 If you google "how to install AMD drivers on Linux" you will inevitably get led down the wrong path and there is no clear and easy way out of that rabbit hole of disasters.
 
-The problem is all the guides are meant for users wanting to game on their system not mine Ethereum so that's where the first problem arises because you will see everywhere that the AMD drivers are already installed to the kernel, which they are BUT the part you need to mine is not there because **_AMD did not include the OpenCL drivers in the kernel driver._**
+The problem is all the guides are meant for users wanting to game on their system not mine Ethereum so that's where the first problem arises because you will see everywhere that the AMD drivers are already installed to the kernel, which they are BUT the part you need to mine is not there because ***AMD did not include the OpenCL drivers in the kernel driver.***
 
 Type the command below and see for yourself, you will see the card is recognised and drivers have been loaded.
 
@@ -40,9 +42,9 @@ So now you can see how we can easily be led down the wrong path, are they instal
 
 First and foremost. You want to be on the latest version of Linux with the latest kernel. At the time of writing the details are:-
 
-- Ubuntu 21.04 (Kubuntu)
-- Kernel: 5.11
-- AMD RX 580 8GB STRIX
+* Ubuntu 21.04 (Kubuntu)
+* Kernel: 5.11
+* AMD RX 580 8GB STRIX
 
 You may read online that older drivers are the best option but this is outdated information. All we need to do is install the OpenCL package on its own, without any of the other addons.
 
@@ -128,13 +130,13 @@ Now we can control the overclocking voltages and speeds
 
 Below is a picture of corectl stats, if your GPU stats look like this you should change your thermal paste. As i quickly found out soon after posting this.
 
-![Corectl graphical user interface](media/corectl-1024x582.png)
+![Corectl graphical user interface](/media/corectl.png)
 
 CoreCtl GUI
 
 Here is an image of my GPU stats AFTER applying new thermal paste. 😂
 
-![corectl proper image](media/corectl-proper-1024x614.png "corectl main gui")
+![corectl proper image](/media/corectl-proper.png "corectl main gui")
 
 Corectl main GUI after applying new thermal paste.
 
