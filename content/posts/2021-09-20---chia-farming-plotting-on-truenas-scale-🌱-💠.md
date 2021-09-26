@@ -5,7 +5,7 @@ template: "post"
 draft: false
 slug: "chia-farming-and-plotting-on-truenas-scale"
 coverImage: "/media/Screenshot_20210910_144649.png"
-category: "chia", "chia-plotting", "chia-blockchain", "crypto", "farming", "plotting"
+category: chia
 tags:
   - "chia"
   - "chia-plotting"
