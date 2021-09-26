@@ -1,20 +1,20 @@
 ---
-title: "Chia Farming & Plotting on TrueNAS SCALE  🌱 + 💠"
-date: "2021-09-20"
-template: "post"
 draft: false
-slug: "chia-farming-and-plotting-on-truenas-scale"
-coverImage: "/media/Screenshot_20210910_144649.png"
+coverImage: /media/Screenshot_20210910_144649.png
+template: post
+title: Chia Farming & Plotting on TrueNAS SCALE
+slug: chia-farming-and-plotting-on-truenas-scale
+socialImage: /media/Screenshot_20210910_144649-1024x507.png
+date: 2021-09-20
+description: A how to guide on using TrueNAS SCALE for Chia farming and plotting.
 category: chia
 tags:
-  - "chia"
-  - "chia-plotting"
-  - "chia-blockchain"
-  - "crypto"
-  - "farming"
-  - "plotting"
-socialImage: "/media/Screenshot_20210910_144649-1024x507.png"
-description: "A how to guide on using TrueNAS SCALE for Chia farming and plotting."
+  - chia
+  - chia-plotting
+  - chia-blockchain
+  - crypto
+  - farming
+  - plotting
 ---
 
 ## Introduction:
