@@ -6,7 +6,7 @@ module.exports = {
   title: 'Blog by Darren Bennett',
   subtitle: 'Currently learning React, Vue & Django',
   copyright: 'blog.dazeb.uk © All rights reserved.',
-  disqusShortname: 'blog-dazeb-uk',
+  disqusShortname: '',
   postsPerPage: 4,
   googleAnalyticsId: 'UA-208608020-1',
   useKatex: false,
