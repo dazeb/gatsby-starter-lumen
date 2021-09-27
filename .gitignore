@@ -8,3 +8,5 @@ npm-debug.log
 gatsby-starter-lumen.iml
 # Local Netlify folder
 .netlify
+# vscode extensions
+.vscode/
